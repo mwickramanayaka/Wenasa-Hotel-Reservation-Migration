@@ -21,6 +21,7 @@
 
     <form action="{{ url('admin/add-category/')}}" method="POST" enctype="multipart/form-data">
         @csrf
+        
         <div class="mb-3">
             <label>Category Name</label>
             <input type="text" name="name" class="form-control">
