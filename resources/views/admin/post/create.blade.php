@@ -43,7 +43,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="">Description</label>
-                    <textarea type="text" name="description" class="form-control" rows="4"></textarea>
+                    <textarea name="description" id="mySummernote" class="form-control" rows="4"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="">Youtube Iframe Link</label>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="">Meta Description</label>
-                    <textarea type="text" name="meta_description" class="form-control" rows="3"></textarea>
+                    <textarea name="meta_description" class="form-control" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="">Meta Keyword</label>

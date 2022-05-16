@@ -29,11 +29,11 @@
         </div>
         <div class="mb-3">
             <label>Slug</label>
-            <input type="text" name="slug" value="{{ $category->slug }}" class="form-control">
+            <input name="slug" value="{{ $category->slug }}" class="form-control">
         </div>
         <div class="mb-3">
             <label>Description</label>
-            <textarea type="text" name="description" rows="5" class="form-control">{{ $category->description }}</textarea>
+            <textarea name="description" id="mySummernote" rows="5" class="form-control">{{ $category->description }}</textarea>
         </div>
         <div class="mb-3">
             <label>Image</label>

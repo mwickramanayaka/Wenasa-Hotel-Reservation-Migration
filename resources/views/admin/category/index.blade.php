@@ -20,7 +20,7 @@
             </div>
             @endif
 
-            <table class="table table-bordered">
+            <table id="myDataTable" class="table table-bordered">
                 <thead>
                     <tr>
                         <th>ID</th>

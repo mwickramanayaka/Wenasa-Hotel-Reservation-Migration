@@ -9,6 +9,7 @@ use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use PHPUnit\Framework\MockObject\Stub\ReturnReference;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 
@@ -29,7 +30,7 @@ class CategoryController extends Controller
         $data = $request->validated();
         $category = new Category;
         $category->name = $data['name'];
-        $category->slug = $data['slug'];
+        $category->slug = Str::slug($data['slug']);
         $category->description = $data['description'];
         if ($request->hasfile('image')) {
 
