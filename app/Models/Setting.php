@@ -12,7 +12,7 @@ class Setting extends Model
     protected $table = 'settings';
 
     protected $fillable = [
-        'website_name',
+        '',
         'logo',
         'favicon',
         'description',

@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title', 'Wenasa Hotel')
-@section('meta_description', 'Wenasa Blog')
-@section('meta_keyword', 'Wenasa Blog')
+@section('title', "$setting->website_name")
+@section('meta_description', "$setting->meta_description")
+@section('meta_keyword', "$setting->meta_keyword")
 @section('content')
 
     <div class="bg-danger py-5 bg-category ">
