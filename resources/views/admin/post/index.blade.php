@@ -35,7 +35,7 @@
                         @foreach ($posts as $item)
                             <tr>
                                 <td>{{ $item->id }}</td>
-                                <td>{{ $item->category->name }}</td>
+                                <td>{{ $item->name }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->Status == '1' ? 'Hidden' : 'Visible' }}</td>
                                 <td>
