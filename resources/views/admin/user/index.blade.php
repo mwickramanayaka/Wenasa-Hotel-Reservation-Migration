@@ -18,33 +18,37 @@
                     </div>
                 @endif
 
-                <table id="myDataTable" class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Role</th>
-                            <th>Edit</th>
+                <div class="table-responsive">
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($users as $item)
+                    <table id="myDataTable" class="table table-bordered">
+                        <thead>
                             <tr>
-                                <td>{{ $item->id }}</td>
-                                <td>{{ $item->name }}</td>
-                                <td>{{ $item->email }}</td>
-                                <td>{{ $item->role_as == '1' ? 'Admin' : 'User' }}</td>
-                                <td>
-                                    <a href="{{ url('admin/user/' . $item->id) }}" class="btn btn-success">Edit</a>
-                                </td>
-                            
-                            </tr>
-                        @endforeach
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Edit</th>
 
-                    </tbody>
-                </table>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($users as $item)
+                                <tr>
+                                    <td>{{ $item->id }}</td>
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{ $item->email }}</td>
+                                    <td>{{ $item->role_as == '1' ? 'Admin' : 'User' }}</td>
+                                    <td>
+                                        <a href="{{ url('admin/user/' . $item->id) }}" class="btn btn-success">Edit</a>
+                                    </td>
+
+                                </tr>
+                            @endforeach
+
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
     </div>
