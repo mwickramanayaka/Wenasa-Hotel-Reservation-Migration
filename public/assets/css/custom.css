@@ -7,6 +7,14 @@
     background-color: #e1d567 !important;
 }
 
+.wenasa{
+    font-size: 22px;
+    font-style: normal;
+    color: #ddd;
+}
+.navbar li a {
+    color: white;
+  }
 .navbar{
     padding: 0px 0px !important;
 

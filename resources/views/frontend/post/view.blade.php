@@ -18,7 +18,30 @@
                             {!! $post->description !!}
                         </div>
                     </div>
-                   
+                     <div class="comment-area mt-4">
+                         <div class="card card-body">
+                             <h6 class="card-title">Leave a Comment</h6>
+                             <form action="" method="POST">
+                                 <textarea name="comment_body" class="form-control" rows="3" required></textarea>
+                                 <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                             </form>
+                         </div>
+                         <div class="card card-body shadow-sm mt-3">
+                             <div class="detail-area">
+                                 <h6 class="user_name mb-1">
+                                     User 
+                                         <small class="ms-3 text-primary">Commented on: 3-8-2022</small>
+                                 </h6>
+                                 <p class="user_comment mb-1">
+                                     How to use blade.php file in a laravel framework
+                                 </p>
+                             </div>
+                             <div>
+                                 <a href="" class="btn btn-primary btn-sm me-2">Edit</a>
+                                 <a href="" class="btn btn-danger btn-sm me-2">Delete</a>
+                             </div>
+                         </div>
+                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mt-3">
