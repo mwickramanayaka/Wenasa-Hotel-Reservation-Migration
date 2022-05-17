@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\Cast\String_;
 
 class FrontendController extends Controller
 {
@@ -24,5 +25,17 @@ class FrontendController extends Controller
             return redirect('/');
         }
       
+    }
+
+    public function viewPost(string $category_slug, string $post_slug)
+    {
+        $category = Category::where('slug', $category_slug)->where('status', '0')->first();
+        if ($category) {
+            $post = Post::where('category_id', $category->id)->where('slug', $post_slug)->where('status', '0')->first();
+            $latest_posts = Post::where('category_id', $category->id)->where('status', '0')->orderBy('created_at','DESC')->get()->take(8);
+            return view('frontend.post.view',compact('post','latest_posts'));
+        } else {
+            return redirect('/');
+        }
     }
 }

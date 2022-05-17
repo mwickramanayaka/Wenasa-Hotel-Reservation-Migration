@@ -1,6 +1,6 @@
 <div class="global-navbar">
     <div class="container">
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-md-3">
                 <img src="{{ asset('assets/images/logo.png') }}" class="w-100%" alt="Logo">
             </div>
@@ -12,7 +12,7 @@
 
             </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-green">
         <div class="container"> 

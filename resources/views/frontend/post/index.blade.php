@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', "$category->meta_title")
+@section('meta_description', "$category->meta_description")
+@section('meta_keyword', "$category->meta_keyword")
+
 @section('content')
     <div class="py-5">
         <div class="container">
@@ -7,7 +11,7 @@
                 <div class="col-md-9">
 
                     <div class="category-heading">
-                        <h4>{{ $category->name }} </h4>
+                        <h4 class="mb-0">{{ $category->name }} </h4>
                     </div>
 
                     @forelse ($post as $postitem)
@@ -37,12 +41,5 @@
                         {{ $post->links() }}
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="border p-2">
-                        <h4>Advertising area</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                
 @endsection
