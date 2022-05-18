@@ -15,7 +15,8 @@ class FrontendController extends Controller
     {
         $setting = Setting::find(1);
         $all_categories = Category::where('status','0')->get();
-        $latest_posts = Post::where('status','0')->orderBy('created_at','DESC')->get()->take(6);
+        $latest_posts = Post::where('status','0')->get()->take(6);
+        // $latest_posts = Post::where('status','0')->orderBy('created_at','ASC')->get()->take(6);
         return view('frontend.index', compact('all_categories','latest_posts' ,'setting'));
     }
 

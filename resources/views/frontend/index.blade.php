@@ -75,7 +75,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 ">
-                    <h4>Latest Blog Posts</h4>
+                    <h4> Blog Posts</h4>
                     <div class="underline"></div>
 
                 </div>
